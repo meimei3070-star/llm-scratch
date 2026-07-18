@@ -9,11 +9,15 @@
 
 ### 1. 勾配降下法（Gradient Descent）による最適化
 目的関数（損失関数） $E(\mathbf{x})$ に対し、パラメータの更新式を以下のようにモデリングし、学習率 $\alpha$ の動的制御による収束性を検証します。
-$$ \mathbf{x}_{t+1} = \mathbf{x}_t - \alpha \nabla E(\mathbf{x}_t) $$
+$$
+\mathbf{x}_{t+1} = \mathbf{x}_t - \alpha \nabla E(\mathbf{x}_t)
+$$
 
 ### 2. 言語モデルの条件付き確率分布
 LLMのテキスト生成は、与えられた単語の列（トークン列） $w_1, w_2, \dots, w_t$ に対する、次の単語 $w_{t+1}$ の条件付き確率分布の近似として捉えます。
-$$ P(w_{t+1} \mid w_1, w_2, \dots, w_t) $$
+$$ 
+P(w_{t+1} \mid w_1, w_2, \dots, w_t)
+$$
 
 ---
 
